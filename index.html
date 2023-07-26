@@ -28,7 +28,59 @@
     </style>
 </head>
 <body>
-    <header><nav></nav></header>
+    <header class="md:px-5">
+        <!-- nav start -->
+        <nav class="container mx-auto">
+            <div class="navbar md:bg-[#F85559] rounded-full p-7">
+                <div class="lg:hidden navbar-start">
+                    <div class="dropdown">
+                        <label class="btn btn-circle swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+                            
+                            <!-- hamburger icon -->
+                            <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                            
+                            <!-- close icon -->
+                            <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                            
+                        </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="max-lg:hidden navbar-start">
+                    <ul class="flex">
+                        <li><a class="text-white text-xl font-medium large_link xl:mr-7 lg:mr-3 ease-in duration-300 hover:text-black" href="#">Home</a></li>
+                        <li><a class="text-white text-xl font-medium large_link xl:mr-7 lg:mr-3 ease-in duration-300 hover:text-black" href="#">About Us</a></li>
+                        <li><a class="text-white text-xl font-medium large_link xl:mr-7 lg:mr-3 ease-in duration-300 hover:text-black" href="#">Shop</a></li>
+                        <li><a class="text-white text-xl font-medium large_link xl:mr-7 lg:mr-3 ease-in duration-300 hover:text-black" href="#">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl content-center">
+                        <img src="./images/logo.png" alt="">
+                        <h2 class="md:text-white font-bold md:text-4xl">Fruit Burst</h2>
+                    </a>
+                </div>
+                <div class="max-md:hidden navbar-end">
+                    <div class="form-control">
+                        <div class="flex">
+                            <input type="text" placeholder="Search here" class="rounded-l-full xl:pr-32 pl-7" />
+                            <button class="btn btn-square bg-white rounded-r-full search border-none">
+                                <i class="w-6 fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </nav>
+        <!-- nav end -->
+    </header>
     <main></main>
     <footer></footer>
 </body>
